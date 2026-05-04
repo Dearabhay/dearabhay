@@ -42,6 +42,7 @@ const Linkedin = ({ size = 24, color = "currentColor", ...props }) => (
     <circle cx="4" cy="4" r="2" />
   </svg>
 );
+
 import "./style.css";
 
 const profile = {
@@ -50,8 +51,14 @@ const profile = {
   location: "Greater Noida, India",
   phone: "+91 7634974940",
   email: "abhaykumarniraj@gmail.com",
+
+  // Yaha apna real GitHub profile link paste karna
   github: "https://github.com/",
+
+  // Yaha apna real LinkedIn profile link paste karna
   linkedin: "https://www.linkedin.com/",
+
+  // Tumhara DA Games website
   gameStudio: "https://da-games-ecru.vercel.app/"
 };
 
@@ -59,25 +66,43 @@ const projects = [
   {
     title: "EduVahak",
     badge: "School ERP SaaS Platform",
+    live: "https://edu-vahak.vercel.app/",
     stack: "React.js · TypeScript · Supabase · PostgreSQL · Capacitor",
-    description: "A multi-tenant school ERP platform with RBAC, PostgreSQL Row-Level Security, Supabase Edge Functions and mobile deployment using Capacitor.",
-    points: ["Institution-wise secure data isolation", "Server-side APIs with Edge Functions", "Improved API response time by around 25%"],
+    description:
+      "A multi-tenant school ERP platform with RBAC, PostgreSQL Row-Level Security, Supabase Edge Functions and mobile deployment using Capacitor.",
+    points: [
+      "Institution-wise secure data isolation",
+      "Server-side APIs with Edge Functions",
+      "Improved API response time by around 25%"
+    ],
     icon: ShieldCheck
   },
   {
     title: "PathFinder",
     badge: "AI Career Guidance Platform",
+    live: "https://career-guider-six.vercel.app/",
     stack: "React.js · Supabase · PostgreSQL · Edge Functions",
-    description: "An AI-powered platform that analyzes education, skills and interests to recommend personalized career paths and growth opportunities.",
-    points: ["Secure AI inference", "Safe API key management", "Scalable backend architecture"],
+    description:
+      "An AI-powered platform that analyzes education, skills and interests to recommend personalized career paths and growth opportunities.",
+    points: [
+      "Secure AI inference",
+      "Safe API key management",
+      "Scalable backend architecture"
+    ],
     icon: Brain
   },
   {
     title: "Servantra",
     badge: "Service Management Platform",
+    live: "https://servantra.vercel.app/",
     stack: "React.js · TypeScript · Vite · Tailwind CSS · Supabase",
-    description: "A full-stack service platform with JWT authentication, Supabase RLS protection, clean MVC architecture and responsive UI.",
-    points: ["JWT-based secure auth", "Reusable UI components", "Mobile-first responsive design"],
+    description:
+      "A full-stack service platform with JWT authentication, Supabase RLS protection, clean MVC architecture and responsive UI.",
+    points: [
+      "JWT-based secure auth",
+      "Reusable UI components",
+      "Mobile-first responsive design"
+    ],
     icon: Server
   }
 ];
@@ -87,7 +112,8 @@ const games = [
     title: "Master Chess",
     emoji: "♟️",
     type: "Strategy · Board",
-    description: "A chess application with AI opponent, multiplayer mode, challenge modes, achievements, star ratings and board themes.",
+    description:
+      "A chess application with AI opponent, multiplayer mode, challenge modes, achievements, star ratings and board themes.",
     features: ["AI Opponent", "Multiplayer", "200 Levels", "Achievements"],
     tone: "green"
   },
@@ -95,7 +121,8 @@ const games = [
     title: "Sweet Crunch",
     emoji: "🍬",
     type: "Casual · Match-3",
-    description: "A colorful match-3 puzzle game where players match candies, donuts and sweets to complete engaging levels.",
+    description:
+      "A colorful match-3 puzzle game where players match candies, donuts and sweets to complete engaging levels.",
     features: ["Match-3", "Boosters", "Level Map", "5.0 Rating"],
     tone: "pink"
   },
@@ -103,16 +130,40 @@ const games = [
     title: "Puzzle Arena",
     emoji: "🧩",
     type: "Puzzle · Brain Game",
-    description: "A brain-focused puzzle game designed for logical challenges, clean mobile gameplay and Android users.",
+    description:
+      "A brain-focused puzzle game designed for logical challenges, clean mobile gameplay and Android users.",
     features: ["Brain Puzzle", "Android", "AdMob Ready", "Free Play"],
     tone: "blue"
   }
 ];
 
 const skills = [
-  "React.js", "Node.js", "Express.js", "TypeScript", "JavaScript", "Python", "C++", "Java",
-  "Supabase", "PostgreSQL", "MongoDB", "REST APIs", "JWT", "RBAC", "RLS", "Tailwind CSS",
-  "Vite", "Capacitor", "Git", "GitHub", "Vercel", "AWS", "DSA", "OOPs", "DBMS", "OS"
+  "React.js",
+  "Node.js",
+  "Express.js",
+  "TypeScript",
+  "JavaScript",
+  "Python",
+  "C++",
+  "Java",
+  "Supabase",
+  "PostgreSQL",
+  "MongoDB",
+  "REST APIs",
+  "JWT",
+  "RBAC",
+  "RLS",
+  "Tailwind CSS",
+  "Vite",
+  "Capacitor",
+  "Git",
+  "GitHub",
+  "Vercel",
+  "AWS",
+  "DSA",
+  "OOPs",
+  "DBMS",
+  "OS"
 ];
 
 const achievements = [
@@ -136,36 +187,94 @@ function App() {
   return (
     <main>
       <nav className="navbar">
-        <a className="brand" href="#home"><span>AK</span><strong>Abhay Kumar</strong></a>
+        <a className="brand" href="#home">
+          <span>AK</span>
+          <strong>Abhay Kumar</strong>
+        </a>
+
         <div className="nav-links">
           <a href="#projects">Projects</a>
           <a href="#games">Games</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </div>
-        <a className="nav-cta" href={profile.gameStudio} target="_blank" rel="noreferrer">DA Games <ExternalLink size={16}/></a>
+
+        <a
+          className="nav-cta"
+          href={profile.gameStudio}
+          target="_blank"
+          rel="noreferrer"
+        >
+          DA Games <ExternalLink size={16} />
+        </a>
       </nav>
 
       <section id="home" className="hero">
-        <motion.div className="hero-text" initial={{opacity:0,y:24}} animate={{opacity:1,y:0}} transition={{duration:.7}}>
-          <div className="pill"><Sparkles size={16}/> Open to SDE / Full Stack roles</div>
-          <h1>Building scalable web apps, AI platforms and Android games.</h1>
-          <p>{profile.name} is an aspiring Software Development Engineer with hands-on experience in React.js, Node.js, Supabase, PostgreSQL, secure APIs, mobile deployment and real-world product development.</p>
-          <div className="actions">
-            <a className="btn primary" href="#projects">View Projects <ArrowRight size={18}/></a>
-            <a className="btn secondary" href="/Abhay_Kumar_Resume.pdf" download>Download Resume <Download size={18}/></a>
+        <motion.div
+          className="hero-text"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          <div className="pill">
+            <Sparkles size={16} /> Open to SDE / Full Stack roles
           </div>
+
+          <h1>Building scalable web apps, AI platforms and Android games.</h1>
+
+          <p>
+            {profile.name} is an aspiring Software Development Engineer with
+            hands-on experience in React.js, Node.js, Supabase, PostgreSQL,
+            secure APIs, mobile deployment and real-world product development.
+          </p>
+
+          <div className="actions">
+            <a className="btn primary" href="#projects">
+              View Projects <ArrowRight size={18} />
+            </a>
+
+            <a
+              className="btn secondary"
+              href="/Abhay_Kumar_Resume.pdf"
+              download
+            >
+              Download Resume <Download size={18} />
+            </a>
+          </div>
+
           <div className="stats">
-            <div><strong>3+</strong><span>Android Games</span></div>
-            <div><strong>6+</strong><span>Major Projects</span></div>
-            <div><strong>25%</strong><span>API Improvement</span></div>
-            <div><strong>2027</strong><span>B.Tech CSE</span></div>
+            <div>
+              <strong>3+</strong>
+              <span>Android Games</span>
+            </div>
+            <div>
+              <strong>6+</strong>
+              <span>Major Projects</span>
+            </div>
+            <div>
+              <strong>25%</strong>
+              <span>API Improvement</span>
+            </div>
+            <div>
+              <strong>2027</strong>
+              <span>B.Tech CSE</span>
+            </div>
           </div>
         </motion.div>
 
-        <motion.div className="hero-visual" initial={{opacity:0,scale:.95}} animate={{opacity:1,scale:1}} transition={{duration:.7,delay:.1}}>
+        <motion.div
+          className="hero-visual"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+        >
           <div className="code-box">
-            <div className="dots"><i></i><i></i><i></i></div>
+            <div className="dots">
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+
             <pre>{`const abhay = {
   role: "SDE / Full Stack",
   frontend: ["React", "Vite", "Tailwind"],
@@ -174,28 +283,71 @@ function App() {
   games: ["Master Chess", "Sweet Crunch", "Puzzle Arena"]
 };`}</pre>
           </div>
+
           <div className="mini-grid">
-            <div><Code2/><span>Full Stack</span></div>
-            <div><Gamepad2/><span>Game Dev</span></div>
-            <div><Database/><span>Database</span></div>
-            <div><Smartphone/><span>Android</span></div>
+            <div>
+              <Code2 />
+              <span>Full Stack</span>
+            </div>
+            <div>
+              <Gamepad2 />
+              <span>Game Dev</span>
+            </div>
+            <div>
+              <Database />
+              <span>Database</span>
+            </div>
+            <div>
+              <Smartphone />
+              <span>Android</span>
+            </div>
           </div>
         </motion.div>
       </section>
 
       <section id="projects" className="section">
-        <SectionTitle label="Featured Projects" title="Resume-based engineering projects" text="Production-focused full-stack projects with security, scalability and clean architecture." />
+        <SectionTitle
+          label="Featured Projects"
+          title="Resume-based engineering projects"
+          text="Production-focused full-stack projects with security, scalability and clean architecture."
+        />
+
         <div className="project-grid">
           {projects.map((project, index) => {
             const Icon = project.icon;
+
             return (
-              <motion.article className="project-card" key={project.title} initial={{opacity:0,y:18}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:index*.08}}>
-                <div className="project-icon"><Icon/></div>
+              <motion.article
+                className="project-card"
+                key={project.title}
+                initial={{ opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.08 }}
+              >
+                <div className="project-icon">
+                  <Icon />
+                </div>
+
                 <p className="tag">{project.badge}</p>
                 <h3>{project.title}</h3>
                 <small>{project.stack}</small>
                 <p>{project.description}</p>
-                <ul>{project.points.map(point => <li key={point}>{point}</li>)}</ul>
+
+                <ul>
+                  {project.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+
+                <a
+                  className="demo-btn"
+                  href={project.live}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live Demo <ExternalLink size={16} />
+                </a>
               </motion.article>
             );
           })}
@@ -203,43 +355,120 @@ function App() {
       </section>
 
       <section id="games" className="section">
-        <SectionTitle label="Game Portfolio" title="Published Android games" text="Game development + Play Store publishing + AdMob monetization proof in one place." />
+        <SectionTitle
+          label="Game Portfolio"
+          title="Published Android games"
+          text="Game development + Play Store publishing + AdMob monetization proof in one place."
+        />
+
         <div className="games-grid">
           {games.map((game, index) => (
-            <motion.article className={`game-card ${game.tone}`} key={game.title} initial={{opacity:0,y:18}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:index*.08}}>
+            <motion.article
+              className={`game-card ${game.tone}`}
+              key={game.title}
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.08 }}
+            >
               <div className="game-art">{game.emoji}</div>
+
               <div className="game-info">
                 <p className="tag">{game.type}</p>
                 <h3>{game.title}</h3>
                 <p>{game.description}</p>
-                <div className="chips">{game.features.map(feature => <span key={feature}>{feature}</span>)}</div>
+
+                <div className="chips">
+                  {game.features.map((feature) => (
+                    <span key={feature}>{feature}</span>
+                  ))}
+                </div>
               </div>
             </motion.article>
           ))}
         </div>
-        <div className="center"><a className="btn primary" href={profile.gameStudio} target="_blank" rel="noreferrer">Visit DA Games Website <ExternalLink size={18}/></a></div>
+
+        <div className="center">
+          <a
+            className="btn primary"
+            href={profile.gameStudio}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Visit DA Games Website <ExternalLink size={18} />
+          </a>
+        </div>
       </section>
 
       <section id="skills" className="section split">
         <div>
-          <SectionTitle label="Tech Stack" title="Skills I use to build products" text="Frontend, backend, database, mobile deployment and core computer science fundamentals." />
-          <div className="skill-cloud">{skills.map(skill => <span key={skill}>{skill}</span>)}</div>
+          <SectionTitle
+            label="Tech Stack"
+            title="Skills I use to build products"
+            text="Frontend, backend, database, mobile deployment and core computer science fundamentals."
+          />
+
+          <div className="skill-cloud">
+            {skills.map((skill) => (
+              <span key={skill}>{skill}</span>
+            ))}
+          </div>
         </div>
+
         <div className="side-panel">
-          <div className="panel-card"><GraduationCap/><h3>Education</h3><p><strong>ITS Engineering College, Greater Noida</strong></p><p>B.Tech – Computer Science & Engineering · 2023 – 2027</p></div>
-          <div className="panel-card"><Trophy/><h3>Achievements</h3><ul>{achievements.map(item => <li key={item}>{item}</li>)}</ul></div>
+          <div className="panel-card">
+            <GraduationCap />
+            <h3>Education</h3>
+            <p>
+              <strong>ITS Engineering College, Greater Noida</strong>
+            </p>
+            <p>B.Tech – Computer Science & Engineering · 2023 – 2027</p>
+          </div>
+
+          <div className="panel-card">
+            <Trophy />
+            <h3>Achievements</h3>
+
+            <ul>
+              {achievements.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
       <section id="contact" className="section contact">
-        <SectionTitle label="Contact" title="Let’s build something impactful" text="Open for internships, SDE roles, freelance projects and collaboration opportunities." />
+        <SectionTitle
+          label="Contact"
+          title="Let’s build something impactful"
+          text="Open for internships, SDE roles, freelance projects and collaboration opportunities."
+        />
+
         <div className="contact-grid">
-          <a href={`mailto:${profile.email}`}><Mail/> {profile.email}</a>
-          <a href={`tel:${profile.phone}`}><Phone/> {profile.phone}</a>
-          <span><MapPin/> {profile.location}</span>
-          <a href={profile.github} target="_blank" rel="noreferrer"><Github/> GitHub</a>
-          <a href={profile.linkedin} target="_blank" rel="noreferrer"><Linkedin/> LinkedIn</a>
-          <a href="/Abhay_Kumar_Resume.pdf" download><Download/> Resume PDF</a>
+          <a href={`mailto:${profile.email}`}>
+            <Mail /> {profile.email}
+          </a>
+
+          <a href={`tel:${profile.phone}`}>
+            <Phone /> {profile.phone}
+          </a>
+
+          <span>
+            <MapPin /> {profile.location}
+          </span>
+
+          <a href={profile.github} target="_blank" rel="noreferrer">
+            <Github /> GitHub
+          </a>
+
+          <a href={profile.linkedin} target="_blank" rel="noreferrer">
+            <Linkedin /> LinkedIn
+          </a>
+
+          <a href="/Abhay_Kumar_Resume.pdf" download>
+            <Download /> Resume PDF
+          </a>
         </div>
       </section>
 
