@@ -474,7 +474,7 @@ function App() {
 
       <footer>
         <p>© 2026 Abhay Kumar. Built with React + Vite. Deployed on Vercel.</p>
-        <a href="/app-ads.txt">app-ads.txt</a>
+        
       </footer>
     </main>
   );
