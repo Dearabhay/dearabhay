@@ -53,10 +53,10 @@ const profile = {
   email: "abhaykumarniraj@gmail.com",
 
   // Yaha apna real GitHub profile link paste karna
-  github: "https://github.com/",
+  github: "https://github.com/Dearabhay",
 
   // Yaha apna real LinkedIn profile link paste karna
-  linkedin: "https://www.linkedin.com/",
+  linkedin: "https://www.linkedin.com/dearabhaykumar",
 
   // Tumhara DA Games website
   gameStudio: "https://da-games-ecru.vercel.app/"
@@ -308,7 +308,7 @@ function App() {
       <section id="projects" className="section">
         <SectionTitle
           label="Featured Projects"
-          title="Resume-based engineering projects"
+          title="Projects"
           text="Production-focused full-stack projects with security, scalability and clean architecture."
         />
 
