@@ -50,7 +50,7 @@ const profile = {
   role: "Software Development Engineer | Full Stack Developer | Android Game Developer",
   location: "Greater Noida, India",
   phone: "+91 7634974940",
-  email: "abhaykumarniraj@gmail.com",
+  email: "abhaykumarnirajwork@gmail.com",
 
   // Yaha apna real GitHub profile link paste karna
   github: "https://github.com/Dearabhay",
@@ -473,7 +473,7 @@ function App() {
       </section>
 
       <footer>
-        <p>© 2026 Abhay Kumar. Built with React + Vite. Deployed on Vercel.</p>
+        <p>© 2026 Abhay Kumar.</p>
         
       </footer>
     </main>
