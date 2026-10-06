@@ -63,7 +63,7 @@
 
 ---
 
-### 🔧 [Servantra](https://github.com/abhaykumarniraj/servantra) — Service Management Platform
+### 🔧 [Servantra:-https://github.com/Dearabhay/cityserives) — Service Management Platform
 > React.js · TypeScript · Vite · Tailwind CSS · PostgreSQL · Express.js · Docker
 
 - Full-stack platform with **JWT authentication**, Supabase RLS, and mobile-first responsive design
