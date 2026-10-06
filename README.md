@@ -45,7 +45,7 @@
 
 ## 🚀 Featured Projects
 
-### 🏫 [EduVahak](https://github.com/abhaykumarniraj/eduvahak) — School ERP SaaS Platform
+### 🏫 [EduVahak](https://github.com/Dearabhay/eduvahak) — School ERP SaaS Platform
 > React.js · TypeScript · Node.js · PostgreSQL · Supabase · Docker · GitHub Actions
 
 - Multi-tenant architecture with **RBAC + PostgreSQL Row-Level Security** for strict data isolation
@@ -54,7 +54,7 @@
 
 ---
 
-### 🧭 [PathFinder](https://github.com/abhaykumarniraj/pathfinder) — AI Career Guidance Platform
+### 🧭 [PathFinder](https://github.com/Dearabhay/pathfinder) — AI Career Guidance Platform
 > React.js · Node.js · PostgreSQL · Supabase Edge Functions
 
 - AI-powered platform analyzing user skills & interests to deliver **personalized career recommendations**
